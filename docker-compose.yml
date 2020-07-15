@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  scala:
+    build: ./scala
+    volumes:
+      - "${DATA_DIR}:/mnt/output"
+  soot:
+    build: ./soot
+    volumes:
+      - "${DATA_DIR}:/mnt/output"
+  graphviz:
+    build: ./graphviz
+    volumes:
+      - "${DATA_DIR}:/mnt/output"
+
