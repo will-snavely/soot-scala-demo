@@ -3,13 +3,13 @@ services:
   scala:
     build: ./scala
     volumes:
-      - "${DATA_DIR}:/mnt/output"
+      - ".:/app"
   soot:
     build: ./soot
     volumes:
-      - "${DATA_DIR}:/mnt/output"
+      - ".:/app"
   graphviz:
     build: ./graphviz
     volumes:
-      - "${DATA_DIR}:/mnt/output"
+      - ".:/app"
 
